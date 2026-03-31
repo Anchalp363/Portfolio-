@@ -30,16 +30,16 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text)
 body::before { content:''; position:fixed; inset:0; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events:none; z-index:999; opacity:0.45; }
 
 /* ── COVER ── */
-.cover { min-height:100vh; display:flex; flex-direction:column; justify-content:space-between; padding:60px 80px; position:relative; border-bottom:1px solid var(--border); background:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(200,169,110,0.07) 0%, transparent 70%); }
+.cover { min-height:100vh; display:flex; flex-direction:column; justify-content:space-between; padding:28px 80px 60px; position:relative; border-bottom:1px solid var(--border); background:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(200,169,110,0.07) 0%, transparent 70%); }
 .cover-top { display:flex; justify-content:space-between; align-items:flex-start; }
 .agency-name { font-size:11px; letter-spacing:0.28em; color:var(--gold); text-transform:uppercase; font-weight:500; }
 .doc-ref { font-size:11px; color:var(--muted); letter-spacing:0.1em; text-align:right; line-height:1.9; }
-.cover-center { flex:1; display:flex; flex-direction:column; justify-content:center; padding:80px 0 40px; }
-.cover-eyebrow { font-size:10px; letter-spacing:0.32em; color:var(--gold); text-transform:uppercase; margin-bottom:28px; }
-.cover-title { font-family:'Cormorant Garamond',serif; font-size:clamp(56px,9vw,110px); font-weight:300; line-height:0.93; letter-spacing:-0.02em; color:var(--text); }
+.cover-center { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:40px 0 32px; }
+.cover-eyebrow { font-size:10px; letter-spacing:0.32em; color:var(--gold); text-transform:uppercase; margin-bottom:24px; }
+.cover-title { font-family:'Cormorant Garamond',serif; font-size:clamp(64px,10vw,124px); font-weight:400; line-height:0.93; letter-spacing:-0.02em; color:var(--text); }
 .cover-title em { font-style:italic; color:var(--gold-light); }
-.cover-rule { width:56px; height:1px; background:var(--gold); margin:32px 0; opacity:0.45; }
-.cover-subtitle { font-size:13px; color:var(--muted); max-width:480px; line-height:1.9; letter-spacing:0.03em; }
+.cover-rule { width:56px; height:1px; background:var(--gold); margin:28px auto; opacity:0.45; }
+.cover-subtitle { font-size:13px; color:var(--muted); max-width:520px; line-height:1.9; letter-spacing:0.03em; text-align:center; }
 .cover-bottom { display:flex; justify-content:space-between; align-items:flex-end; }
 .cover-meta { display:flex; gap:52px; }
 .meta-item label { display:block; font-size:9.5px; letter-spacing:0.22em; color:var(--gold); text-transform:uppercase; margin-bottom:6px; }
